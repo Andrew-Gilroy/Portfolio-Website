@@ -1,21 +1,37 @@
-import React from "react"
-import { Link } from "gatsby"
+//PLUGINS & DEPS
+import React from 'react';
+import Layout from "../layouts/Layout.js";
+import SEO from "../components/seo";
+import Helmet from "react-helmet"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+//COMPONENTS
+//import NavBar from "../components/NavBar/NavBar.js";
+import Hero from "../components/Hero/Hero.js";
+import About from "../components/About/About.js";
+import Projects from "../components/Projects/Projects.js";
+import Contact from "../components/Contact/Contact.js";
+import Footer from "../components/Footer/Footer.js";
+
+//CSS
+import global from "../styles/global.css";
+
+//JS Scripts
+
+//I MIGHT NEED TO ADD HELMET PLUGIN TAGS
+
+/* dont forget to add links to google fonts for "source sans pro" */
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  
+    <>  
+        <Layout pageTitle="Home"/>
+        <SEO title="Home" />
+        <Hero/>
+        <About/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+    </>
 )
 
 export default IndexPage

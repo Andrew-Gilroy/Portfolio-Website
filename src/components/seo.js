@@ -5,12 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
 function SEO({ description, lang, meta, title }) {
+  
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -23,12 +24,13 @@ function SEO({ description, lang, meta, title }) {
         }
       }
     `
-  )
+  );
 
   const metaDescription = description || site.siteMetadata.description
-
+/* defer={false} IS IMPORTANT HERE FOR UPDATING THE PAGE TITLE. 
+I MIGHT NEED TO DISABLE THIS WHEN LIVE */
   return (
-    <Helmet
+    <Helmet defer={false}
       htmlAttributes={{
         lang,
       }}
@@ -39,36 +41,51 @@ function SEO({ description, lang, meta, title }) {
           name: `description`,
           content: metaDescription,
         },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
+        
       ].concat(meta)}
-    />
+    >
+<meta name="keywords" content="Web Development, Graphic Design, UX, 3D Rendering, React, Agile, HTML, CSS, JavaScript"
+></meta>
+
+
+{/*<!-- Open Graph / Facebook -->*/}
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.andrew-gilroy.design/"/>
+<meta property="og:title" content="Andrew Gilroy - Design"/>
+<meta property="og:description" content="Andrew Gilroy's personal portfolio website.
+Showcasing - Graphic Design, Web Development and 3D Rendering projects."/>
+<meta property="og:image" content="https://www.andrew-gilroy.design/seo_image.png"/>
+
+{/*<!-- Twitter -->*/}
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:url" content="https://www.andrew-gilroy.design/"/>
+<meta property="twitter:title" content="Andrew Gilroy - Design"/>
+<meta property="twitter:description" content="Andrew Gilroy's personal portfolio website.
+Showcasing - Graphic Design, Web Development and 3D Rendering projects."/>
+<meta property="twitter:image" content="https://www.andrew-gilroy.design/seo_image.png"/>
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+</Helmet>
   )
 }
 
@@ -86,3 +103,26 @@ SEO.propTypes = {
 }
 
 export default SEO
+/*
+<!-- Primary Meta Tags -->
+<title>Andrew Gilroy - Design</title>
+<meta name="title" content="Andrew Gilroy - Design">
+<meta name="description" content="Andrew Gilroy's personal portfolio website.
+Showcasing - Graphic Design, Web Development and 3D Rendering projects.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://metatags.io/">
+<meta property="og:title" content="Andrew Gilroy - Design">
+<meta property="og:description" content="Andrew Gilroy's personal portfolio website.
+Showcasing - Graphic Design, Web Development and 3D Rendering projects.">
+<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://metatags.io/">
+<meta property="twitter:title" content="Andrew Gilroy - Design">
+<meta property="twitter:description" content="Andrew Gilroy's personal portfolio website.
+Showcasing - Graphic Design, Web Development and 3D Rendering projects.">
+<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+*/
