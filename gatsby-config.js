@@ -5,6 +5,8 @@ module.exports = {
     Showcasing - Graphic Design, Web Development and 3D Rendering projects.`,
     author: `Andrew Gilroy`,
   },
+
+//assetPrefix: ``,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -23,7 +25,8 @@ module.exports = {
         short_name: `AG Design`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `public/icons/favicon.png`, // This path is relative to the root of the site.
+        //icon: `public/icons/favicon.png`, // This path is relative to the root of the site.
+        // fiddle with this. I disabled it because build was failing... didn't used to!
       },
     },
         
