@@ -26,10 +26,7 @@ return (
             </div>
             <div className="project_hero_image_wrapper">
             <img src={rendering_3d_hero_image} alt="3D Rendering Hero" className="project_hero_image"></img>
-        </div>   
-            <div className="contactDivider">
-        <h2 className="dividerHeading">3d Rendering</h2>
-    </div>
+        </div>
     <div className="project_details_flex_row">
         <div className="project_details_text_wrapper ">
             <h2 className="project_details_subheading">Methodology</h2>
@@ -99,8 +96,8 @@ return (
             <h2 className="project_details_subheading">PERSONAL DESIGN LOGO</h2>
             <hr></hr>
             <p className="project_details_body_text">This is an example of a previous design logo I produced for an earlier version of this website. I am currently familiarizing myself with 3d animations in Blender and hope to use them more extensively in future projects.</p>
-            <img src={rendering_3d_3drendering7} alt="Logo - Animated Logo" className="project_details_image--halfWidth"></img>
-            <img src={rendering_3d_3drendering8} alt="Logo - Animated Logo" className="project_details_image--halfWidth box_shadow"></img>
+            <img src={rendering_3d_3drendering7} alt="Personal Design Logo" className="project_details_image--halfWidth"></img>
+            <img src={rendering_3d_3drendering8} alt="Personal Design Logo - Animated" className="project_details_image--halfWidth box_shadow"></img>
         </div>
         {/*<!--end of text wrapper-->*/}
     </div>

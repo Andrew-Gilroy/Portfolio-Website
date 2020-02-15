@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="footer_div_left">
             <AnchorLink href="#home" className="nav_logo_link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102 102" className="footer_icon_left">
-                    <title>Return to home</title>
+                    <title>Back to top</title>
                     <path d="M51.022,1.022A49.978,49.978,0,1,0,82.827,89.516V51h0A31.82,31.82,0,1,0,73.74,73.269V85A40.885,40.885,0,1,1,91.913,51.017h0v28.71h0V94.136L101,98.721V51A49.978,49.978,0,0,0,51.022,1.022Zm0,72.7A22.706,22.706,0,1,1,73.727,51.013h0A22.745,22.745,0,0,1,51.022,73.719Z" />
                 </svg>
             </AnchorLink>

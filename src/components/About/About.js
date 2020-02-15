@@ -56,7 +56,8 @@ const About = () => (
                 <img src={after_effects_cc} alt="Adobe AfterEffects" title="Adobe After Effects" className="svgIcon"></img>
                 <img src={premiere_cc} alt="Adobe PremierPro" title="Adobe Premier Pro" className="svgIcon"></img>
                 <img src={blender} alt="Blender" title="Blender" className="svgIcon"></img>
-                <br></br>
+            </div>
+            <div className="svgIconsWrapper-webdev">
                 <img src={html} alt="Html" title="Html" className="svgIcon"></img>
                 <img src={css} alt="CSS" title="CSS" className="svgIcon"></img>
                 <img src={javascript} alt="Javascript" title="Javascript" className="svgIcon"></img>

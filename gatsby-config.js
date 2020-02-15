@@ -5,8 +5,6 @@ module.exports = {
     Showcasing - Graphic Design, Web Development and 3D Rendering projects.`,
     author: `Andrew Gilroy`,
   },
-
-//assetPrefix: ``,
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -26,7 +24,7 @@ module.exports = {
         start_url: `/`,
         display: `minimal-ui`,
         //icon: `public/icons/favicon.png`, // This path is relative to the root of the site.
-        // fiddle with this. I disabled it because build was failing... didn't used to!
+        // fiddle with this. I disabled it because build was failing... it didn't used to!
       },
     },
         
@@ -108,5 +106,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
 

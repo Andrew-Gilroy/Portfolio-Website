@@ -36,6 +36,11 @@ footer {
     fill: white;
     height: 3.5rem;
     vertical-align: middle;
+    transition: all 0.3s linear 0s;
+}
+.footer_icon_left:hover {
+    fill: #fe3b1f;
+    transform: translateY(-0.2rem);
 }
 
 .footer_icon_right {

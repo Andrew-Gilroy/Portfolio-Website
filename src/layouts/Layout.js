@@ -102,12 +102,12 @@ const Layout = ({ children, pageTitle }) => {
     // Reveals mobile menu after hamburger icon is clicked
     const openNav = () => {
         document.getElementById("myNav").style.width = "100%";
-    }
+    };
 
     // Close mobile menu after hamburger icon is clicked
     const closeNav = () => {
         document.getElementById("myNav").style.width = "0%";
-    }
+    };
     
     const [docTitle, updateDocTitle] = useState("Home | Andrew Gilroy Design");
 
@@ -120,11 +120,10 @@ const Layout = ({ children, pageTitle }) => {
       return (
         <>
             <a href="/" id="home" className="hidden_A_link" aria-hidden="true"></a>
-            {/* <div className="thetop"></div> */}
             <div id="scrolltop">
                 <AnchorLink href="#home" >
                 <div className="scroll">
-                    <FontAwesomeIcon className="icon" icon={faAngleUp}></FontAwesomeIcon>
+                    <FontAwesomeIcon className="icon" icon={faAngleUp}/>
                 </div>
                 </AnchorLink>
             </div>
