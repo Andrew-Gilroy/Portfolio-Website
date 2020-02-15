@@ -20,13 +20,10 @@ const FACTS = () => {
 return (
     <>
         <div className="divider">
-            <h2 className="dividerHeading">Facts.com</h2>
+            <h2 className="divider_heading">Facts.com</h2>
         </div>
         <div className="project_hero_image_wrapper">
             <img src={facts_hero_image} alt="Facts.com Hero" className="project_hero_image"></img>
-        </div>   
-        <div className="contactDivider">
-            <h2 className="dividerHeading">Facts.com</h2>
         </div>
         <div className="project_details_flex_row">
             <div className="project_details_text_wrapper">

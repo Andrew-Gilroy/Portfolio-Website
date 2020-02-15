@@ -49,7 +49,7 @@
 }
 
 /*SVG ABOUT ICONS*/
-.svgIconsWrapper {
+.svg_icons_wrapper {
     grid-column: 1/4;
     grid-row: 3;
     z-index: 2;
@@ -57,7 +57,7 @@
     margin: 3rem 0 0 0;
     padding-top: 0rem;
 }
-.svgIconsWrapper-webdev{
+.svg_icons_wrapper-webdev{
     grid-column: 1/4;
     grid-row: 3;
     z-index: 2;
@@ -65,7 +65,7 @@
     margin: 1rem 0 4rem 0rem;
     padding-top: 0rem;
 }
-.svgIcon {
+.svg_icon {
     height: 5.5rem;
     margin-left: 1rem;
     padding-top: 1rem;
@@ -75,17 +75,14 @@
     transition: all .6s ease;
 }
 
-.svgIcon:hover {
+.svg_icon:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
-.svgIcon:first-of-type {
+.svg_icon:first-of-type {
     margin-left: 0rem;
 }
-/* .svgIcon:nth-of-type(9) {
-    margin-left: 0rem;
-} */
 
 /*ABOUT TEXT STYLING*/
 .about_title {
@@ -314,20 +311,20 @@
         /* VA adjusts the icon to align with text*/
     }
 
-    .svgIconsWrapper {
+    .svg_icons_wrapper {
         
         width: 100%;
         
     }
 
-    .svgIcon {
+    .svg_icon {
         height: 3rem;
         margin-left: 0.3%;
         padding-top: 0;
 
     }
 
-    .svgIcon:first-of-type {
+    .svg_icon:first-of-type {
         margin-left: 0;
     }
     
@@ -407,14 +404,14 @@
 
 
 
-    .svgIcon {
+    .svg_icon {
         height: 2.3rem;
         margin-left: 1%;
         padding-top: 0;
 
     }
 
-    .svgIcon:first-of-type {
+    .svg_icon:first-of-type {
         margin-left: 0;
     }
 }

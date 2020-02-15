@@ -25,8 +25,8 @@ useEffect(() => {
 return (
         <>
         <div className="divider">
-                <h2 className="dividerHeading">Cupboard Combiner</h2>
-            </div>
+            <h2 className="divider_heading">Cupboard Combiner</h2>
+        </div>
             <div className="project_hero_image_wrapper">
             <img src={cupboard_combiner_hero_image} alt="Cupboard Combiner Hero" className="project_hero_image"></img>
         </div>   
@@ -37,7 +37,7 @@ return (
                     Cupboard Combiner is a react.js web app that generates random meals using your cupboard leftovers.
                     </p>
                     <a href="https://andrew-gilroy.github.io/CupboardCombiner/"  target="_blank">
-                        <button className="project_details_submitButton">LIVE DEMO</button>
+                        <button className="project_details_submit_button">LIVE DEMO</button>
                     </a>
                     <img src={cupboard_combiner_appBlueCropped} alt="Cupboard Combiner" className="project_details_image--fullWidth box_shadow"></img>
                 </div>

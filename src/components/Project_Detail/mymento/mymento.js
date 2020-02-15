@@ -28,7 +28,7 @@ const Mymento = () => {
 return (
         <>
         <div className="divider">
-            <h2 className="dividerHeading">myMento</h2>
+            <h2 className="divider_heading">myMento</h2>
         </div>
         <div className="project_hero_image_wrapper">
             <img src={myMento_hero_image} alt="Mymento Hero" className="project_hero_image"></img>
@@ -110,17 +110,17 @@ return (
             <h3 className="project_details_subheading">Design</h3>
             <hr></hr>
             <p className="project_details_body_text">Based on my initial sketches I then used balsalmiq to design a set of wireframes based on our list of validated functional requirements.</p>
-            <img src={mymento_mock1} alt="myMento - Profile Page" className="project_details_image_myMento_phone marginRight"></img>
-            <img src={mymento_mock2stretch} alt="myMento - Context Menu" className="project_details_image_myMento_phone marginLeft"></img>
+            <img src={mymento_mock1} alt="myMento - Profile Page" className="project_details_image_myMento_phone --margin_right"></img>
+            <img src={mymento_mock2stretch} alt="myMento - Context Menu" className="project_details_image_myMento_phone --margin_left"></img>
             
             <p className="project_details_body_text">A state transition diagram along with an application site map were created to map out each of the available functions and how user interactions would be handled by the app. </p>
             <img src={mymento_std} alt="State Transition Diagram" className="project_details_image--fullWidth "></img>
             
              <p className="project_details_body_text">High fidelity mockups were created using Adobe Xd which resulted in a clickable prototype which was later showcased in our product demonstration video.  </p>
-            <img src={mymento_phone_mockup1} alt="myMento - Profile Page" className="project_details_image_myMento_phone marginRight"></img>
-            <img src={mymento_phone_mockup2} alt="myMento - Interview Prompts" className="project_details_image_myMento_phone marginLeft"></img>
-            <img src={mymento_phone_mockup3} alt="myMento - Audio Recording" className="project_details_image_myMento_phone marginRight"></img>
-            <img src={mymento_phone_mockup4} alt="myMento - Context Menu/Share" className="project_details_image_myMento_phone marginLeft"></img>
+            <img src={mymento_phone_mockup1} alt="myMento - Profile Page" className="project_details_image_myMento_phone --margin_right"></img>
+            <img src={mymento_phone_mockup2} alt="myMento - Interview Prompts" className="project_details_image_myMento_phone --margin_left"></img>
+            <img src={mymento_phone_mockup3} alt="myMento - Audio Recording" className="project_details_image_myMento_phone --margin_right"></img>
+            <img src={mymento_phone_mockup4} alt="myMento - Context Menu/Share" className="project_details_image_myMento_phone --margin_left"></img>
         </div>
         {/*         <!--end of text wrapper--> */}    
         </div>
@@ -139,7 +139,7 @@ return (
         </div>
         {/* <!--end of text wrapper--> */}
         </div>
-        {/*     <!--end of row--> */}    
+        {/* <!--end of row--> */}    
         {/*<!--END OF PROJECTS SECTION-->*/}
         </>
     )

@@ -1,5 +1,5 @@
 
-.contactBgWrapper {
+.contact_background_wrapper {
     height: auto;
     width: 99.%;
     margin: 0 0.5rem;
@@ -11,18 +11,18 @@
     transition: all 1.8s ease-out 0s;
 }
 
-.contactBgWrapper:hover {
+.contact_background_wrapper:hover {
     background-position: 50% 23%;
 }
 
-.contact-text-wrapper {
+.contact_text_wrapper {
     width: 40%;
     height: auto;
     margin: 5rem auto 5rem auto;
     text-align: center;
 }
 
-#contact-text-headline {
+#contact_text_headline {
     font-weight: 600;
     font-size: 8.5rem;
     font-family: 'antonio', sans-serif;
@@ -36,7 +36,7 @@
     filter: drop-shadow(0 0.2rem 0.2rem #c7c7c7);
 }
 
-#contact-text-main {
+#contact_text_main {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -70,7 +70,7 @@
     z-index: 13;
 }
 
-#formEmailSvgIcon {
+#form_email_svg_icon {
     height: 3.7rem;
     display: block;
     padding: 1.3rem 0 0 0;
@@ -79,7 +79,7 @@
     filter: drop-shadow(0px 1px 0.5px rgba(0, 0, 0, 0.3));
 }
 
-.formInput {
+.form_input {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -96,12 +96,12 @@
 
 input:focus,
 select:focus,
-textarea:focus,
+text_area:focus,
 button:focus {
     outline: none;
 }
 
-#textArea {
+#text_area {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -143,25 +143,25 @@ button:focus {
 
 }
 
-#textArea::-webkit-input-placeholder {
+#text_area::-webkit-input-placeholder {
     color: #fe3b1f;
     font-size: 1.4rem;
     font-weight: normal;
 }
 
-#textArea:-ms-input-placeholder {
+#text_area:-ms-input-placeholder {
     color: #fe3b1f;
     font-size: 1.4rem;
     font-weight: normal;
 }
 
-#textArea::placeholder {
+#text_area::placeholder {
     color: #fe3b1f;
     font-size: 1.4rem;
     font-weight: normal;
 }
 
-#submitButton {
+#submit_button {
     display: block;
     width: 90%;
     margin: 1.5rem auto 1rem auto;
@@ -182,26 +182,8 @@ button:focus {
     -webkit-appearance: none;
 }
 
-#submitButton:hover {
+#submit_button:hover {
     background-color: #39B44A;
-}
-
-#server-results {
-    display: none;
-    width: 100%;
-    margin: 3rem auto;
-    height: auto;
-    min-height: 5rem;
-    border: 0.1rem solid #d3d3d3;
-    border-radius: 20px;
-    background-color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
-    font-size: 2rem;
-    line-height: calc(1.7rem * 1.618);
-    text-align: center;
-    color: #282828;
-    padding: 1rem;
 }
 
 //////////////////////////////
@@ -238,14 +220,14 @@ button:focus {
 /*## Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
    
-    .contact-text-wrapper {
+    .contact_text_wrapper {
         width: 60%;
         height: auto;
         margin: 5rem auto 5rem auto;
         text-align: center;
     }
 
-    #contact-text-headline {
+    #contact_text_headline {
         color: #22304E;
         font-weight: 600;
         font-size: 4.5rem;
@@ -261,7 +243,7 @@ button:focus {
 
     }
 
-    #contact-text-main {
+    #contact_text_main {
         width: 80%;
         margin: auto;
         text-align: center;
@@ -282,12 +264,12 @@ button:focus {
 
 /*## Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px*/
 @media (min-width: 481px) and (max-width: 767px) {
-    .contact-text-wrapper {
+    .contact_text_wrapper {
         width: 90%;
         margin: 5rem auto 5rem auto;
     }
 
-    #contact-text-headline {
+    #contact_text_headline {
         font-size: 5.5rem;
         font-family: 'antonio', sans-serif;
         font-weight: normal;
@@ -301,7 +283,7 @@ button:focus {
 
     }
 
-    #contact-text-main {
+    #contact_text_main {
         width: 90%;
         padding: 2rem 0 0 0;
         font-family: 'Source Sans Pro', sans-serif;
@@ -329,12 +311,12 @@ button:focus {
 
 /*## Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px*/
 @media (min-width: 220px) and (max-width: 480px) {
-    .contact-text-wrapper {
+    .contact_text_wrapper {
         width: 90%;
         margin: 5rem auto 5rem auto;
     }
 
-    #contact-text-headline {
+    #contact_text_headline {
         font-size: 5.5rem;
         font-family: 'antonio', sans-serif;
         font-weight: normal;
@@ -348,7 +330,7 @@ button:focus {
 
     }
 
-    #contact-text-main {
+    #contact_text_main {
         width: 90%;
         padding: 2rem 0 0 0;
         font-family: 'Source Sans Pro', sans-serif;

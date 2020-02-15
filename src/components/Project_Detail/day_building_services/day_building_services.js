@@ -15,14 +15,11 @@ const DAYBUILDING = () => {
 return (
     <>
     <div className="divider">
-            <h2 className="dividerHeading">Day Building Services</h2>
-        </div>
+        <h2 className="divider_heading">Day Building Services</h2>
+    </div>
         <div className="project_hero_image_wrapper">
             <img src={day_building_hero} alt="Day Building Hero" className="project_hero_image"></img>
         </div>   
-        <div className="contactDivider">
-            <h2 className="dividerHeading">Day Building Services</h2>
-        </div>
     <div className="project_details_flex_row">
         <div className="project_details_text_wrapper ">
             <h2 className="project_details_subheading">Initial Brief</h2>

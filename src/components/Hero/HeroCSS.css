@@ -13,7 +13,7 @@
     }
 }
 
-.heroBackground {
+.hero_background {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -30,7 +30,7 @@
     box-shadow: 0px 2px 7px #1c1c1c;
 }
 
-.image-grid {
+.image_grid {
     -ms-flex-line-pack: start;
     align-content: flex-start;
     animation: animatedBackground 75s linear 0s infinite alternate none running;
@@ -61,7 +61,7 @@
     z-index: 1;
 }
 
-.image-grid-item-container {
+.image_grid_item_container {
     list-style: none;
     max-width: 808px;
     min-width: 150px;
@@ -72,21 +72,21 @@
     display: flex;
 }
 
-.image-grid-item {
+.image_grid_item {
     height: auto;
     display: block;
     opacity: 0.3;
     margin: auto;
 }
 
-.image-grid-item.game-art {
+.image_grid_item.tile {
     width: 300px;
     height: 190px;
 }
 
 /*HERO LOGO*/
 /**********************************************************/
-.hero-LogoWrapper {
+.hero_logo_wrapper {
     display: flex;
     width: auto;
     height: 40rem;
@@ -132,7 +132,7 @@
     }
 }
 
-#hero-AndrewGilroy {
+#hero_andrew_gilroy {
     margin: auto auto;
     width: 100%;
     font-family: 'Antonio', sans-serif;
@@ -166,13 +166,13 @@
     }
 }
 
-#hero-logo-colon {
+#hero_logo_colon {
     font-size: 8rem;
     /*font-size: 7.48rem;*/
     vertical-align: 2rem;
 }
 
-.hero-TextWrapper {
+.hero_text_wrapper {
     width: auto;
     height: auto;
     margin: 0 auto;
@@ -191,7 +191,7 @@
     }
 }
 
-.hero-TextWrapper h1 {
+.hero_text_wrapper h1 {
     display: inline-block;
     font-family: 'Antonio', sans-serif;
     font-weight: normal;
@@ -214,7 +214,7 @@
     z-index: 3;
 }
 
-#hero-Bullet1 {
+#hero_bullet1 {
     font-size: 2rem;
     color: #fe3b1f;
     text-shadow: none;
@@ -222,7 +222,7 @@
     filter: none;
 }
 
-#hero-Bullet2 {
+#hero_bullet2 {
     font-size: 2rem;
     text-shadow: none;
     color: #fe3b1f;
@@ -266,7 +266,7 @@
 /*## Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
     
-    .hero-LogoWrapper {
+    .hero_logo_wrapper {
         position: absolute;
         top: 12vh;
         width: 100%;
@@ -274,7 +274,7 @@
         margin: 2vh auto 2% auto;
     }
 
-    #hero-AndrewGilroy {
+    #hero_andrew_gilroy {
         font-size: 9rem;
         letter-spacing: -0.4rem;
         text-align: center;
@@ -282,12 +282,12 @@
        /* filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.84));*/
     }
 
-    #hero-logo-colon {
+    #hero_logo_colon {
         font-size: 6rem;
         vertical-align: 1.5rem;
     }
 
-    .hero-TextWrapper {
+    .hero_text_wrapper {
         position: absolute;
         bottom: 10%;
         width: 100%;
@@ -297,14 +297,14 @@
         z-index: 3;
     }
 
-    .hero-TextWrapper h1 {
+    .hero_text_wrapper h1 {
         font-size: 3rem;
         color: white;
         padding: 0 0rem;
         text-shadow: 0 0.3rem 0.1rem #2c2c33;
     }
 
-    #hero-Bullet2 {
+    #hero_bullet2 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -312,7 +312,7 @@
         padding: 0 0 0.5rem 0;
     }
 
-    #hero-Bullet1 {
+    #hero_bullet1 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -321,7 +321,7 @@
     }
 
     /*animated Hero image background*/
-    .image-grid {
+    .image_grid {
         height: 573.5px;
         max-height: 400px;
         min-width: 1000px;
@@ -330,20 +330,20 @@
         position: absolute;
     }
 
-    .image-grid-item-container {
+    .image_grid_item_container {
         list-style: none;
         width: 3%;
         overflow: hidden;
     }
 
-    .image-grid-item {
+    .image_grid_item {
         height: auto;
         display: block;
         opacity: 0.2;
         margin: auto;
     }
 
-    .image-grid-item.game-art {
+    .image_grid_item.tile {
         width: 100%;
     }
 
@@ -354,7 +354,7 @@
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     
 
-    .hero-LogoWrapper {
+    .hero_logo_wrapper {
         position: absolute;
         top: 12vh;
         width: 100%;
@@ -363,7 +363,7 @@
         margin: 2vh auto 2% auto;
     }
 
-    #hero-AndrewGilroy {
+    #hero_andrew_gilroy {
         font-size: 6rem;
         letter-spacing: -0.4rem;
         text-align: center;
@@ -371,12 +371,12 @@
         filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.84));
     }
 
-    #hero-logo-colon {
+    #hero_logo_colon {
         font-size: 6rem;
         vertical-align: 0.6rem;
     }
 
-    .hero-TextWrapper {
+    .hero_text_wrapper {
         position: absolute;
         bottom: 13%;
         width: 100%;
@@ -386,7 +386,7 @@
         z-index: 3;
     }
 
-    .hero-TextWrapper h1 {
+    .hero_text_wrapper h1 {
         font-size: 3rem;
         color: white;
         padding: 0 0rem;
@@ -394,7 +394,7 @@
         filter: drop-shadow(0px 1px 0.1rem rgba(0, 0, 0, 1));
     }
 
-    #hero-Bullet2 {
+    #hero_bullet2 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -403,7 +403,7 @@
         padding: 0 0 0.5rem 0;
     }
 
-    #hero-Bullet1 {
+    #hero_bullet1 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -419,7 +419,7 @@
     
     /*ANIMATED HERO SECTION*/
     /**********************************************************/
-    .image-grid {
+    .image_grid {
         height: 573.5px;
         max-height: 400px;
         min-width: 800px;
@@ -429,7 +429,7 @@
         position: absolute;
     }
 
-    .image-grid-item-container {
+    .image_grid_item_container {
         list-style: none;
         max-width: 10%;
         min-width: none;
@@ -439,20 +439,20 @@
         overflow: hidden;
     }
 
-    .image-grid-item {
+    .image_grid_item {
         height: auto;
         display: block;
         opacity: 0.2;
         margin: auto;
     }
 
-    .image-grid-item.game-art {
+    .image_grid_item.tile {
         width: 100%;
     }
 
     /*HERO LOGO SECTION*/
     /**********************************************************/
-    .hero-LogoWrapper {
+    .hero_logo_wrapper {
         position: absolute;
         top: 12vh;
         width: 100%;
@@ -461,19 +461,19 @@
         margin: 2vh auto 2% auto;
     }
 
-    #hero-AndrewGilroy {
+    #hero_andrew_gilroy {
         font-size: 5rem;
         letter-spacing: -0.4rem;
         text-align: center;
         //text-shadow: 0 0.3rem 0.1rem #2c2c33;
     }
 
-    #hero-logo-colon {
+    #hero_logo_colon {
         font-size: 5rem;
         vertical-align: 0.4rem;
     }
 
-    .hero-TextWrapper {
+    .hero_text_wrapper {
         position: absolute;
         bottom: 15%;
         width: 100%;
@@ -483,14 +483,14 @@
         z-index: 3;
     }
 
-    .hero-TextWrapper h1 {
+    .hero_text_wrapper h1 {
         font-size: 2.3rem;
         color: white;
         padding: 0 0rem;
         //text-shadow: 0 0.3rem 0.1rem #2c2c33;
     }
 
-    #hero-Bullet2 {
+    #hero_bullet2 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -499,7 +499,7 @@
         padding: 0 0 0.5rem 0;
     }
 
-    #hero-Bullet1 {
+    #hero_bullet1 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -520,7 +520,7 @@
 
     /*ANIMATED HERO SECTION*/
     /**********************************************************/
-    .image-grid {
+    .image_grid {
         height: 573.5px;
         max-height: 400px;
         min-width: 800px;
@@ -528,7 +528,7 @@
         position: absolute;
     }
 
-    .image-grid-item-container {
+    .image_grid_item_container {
         list-style: none;
         max-width: 10%;
         min-width: none;
@@ -538,20 +538,20 @@
         overflow: hidden;
     }
 
-    .image-grid-item {
+    .image_grid_item {
         height: auto;
         display: block;
         opacity: 0.2;
         margin: auto;
     }
 
-    .image-grid-item.game-art {
+    .image_grid_item.tile {
         width: 100%;
     }
 
     /*HERO LOGO SECTION*/
     /**********************************************************/
-    .hero-LogoWrapper {
+    .hero_logo_wrapper {
         position: absolute;
         top: 12vh;
         width: 100%;
@@ -560,7 +560,7 @@
         margin: 2vh auto 2% auto;
     }
 
-    #hero-AndrewGilroy {
+    #hero_andrew_gilroy {
         font-size: 5rem;
         letter-spacing: -0.4rem;
         text-align: center;
@@ -568,12 +568,12 @@
         filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.84));
     }
 
-    #hero-logo-colon {
+    #hero_logo_colon {
         font-size: 5rem;
         vertical-align: 0.4rem;
     }
 
-    .hero-TextWrapper {
+    .hero_text_wrapper {
         position: absolute;
         bottom: 15%;
         width: 100%;
@@ -583,7 +583,7 @@
         z-index: 3;
     }
 
-    .hero-TextWrapper h1 {
+    .hero_text_wrapper h1 {
         font-size: 2.3rem;
         color: white;
         padding: 0 0rem;
@@ -591,7 +591,7 @@
         filter: drop-shadow(0px 1px 0.1rem rgba(0, 0, 0, 1));
     }
 
-    #hero-Bullet2 {
+    #hero_bullet2 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;
@@ -600,7 +600,7 @@
         padding: 0 0 0.5rem 0;
     }
 
-    #hero-Bullet1 {
+    #hero_bullet1 {
         display: block;
         font-size: 1rem;
         color: #fe3b1f;

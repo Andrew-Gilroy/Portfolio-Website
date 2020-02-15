@@ -135,7 +135,7 @@ body {
     margin: 2rem 0rem;
     z-index: 4;
 }
-.dividerHeading {
+.divider_heading {
     font-family: 'Antonio', sans-serif;
     letter-spacing: -0.1rem;
     line-height: 8rem;
@@ -199,7 +199,7 @@ body {
 
 /*## Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px*/
 @media (min-width: 220px) and (max-width: 480px) {
-    .dividerHeading {
+    .divider_heading {
         
         font-size: 3rem;
 

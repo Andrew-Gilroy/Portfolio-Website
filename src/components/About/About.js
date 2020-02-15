@@ -47,23 +47,23 @@ const About = () => (
                 <li><FontAwesomeIcon icon={faCameraRetro} className="about_paragraph_list_icon"/><h3 className="about_paragraph_list_text">Digital Photography</h3></li>
             </ul>
             <p className="about_text">I am also a recent graduate with a BSc in Digital Technology &amp; Design with a distinction pass. Here I gained invaluable experience working in a remote agile environment with cross functional teams. I also project managed several of the teams and helped deliver three major projects.</p>
-            <div className="svgIconsWrapper">
-                <img src={photoshop_cc} title="Adobe Photoshop" alt="Adobe Photoshop" className="svgIcon"></img>
-                <img src={illustrator_cc} alt="Adobe Illustrator" title="Adobe Illustrator" className="svgIcon"></img>
-                <img src={indesign_cc} alt="Adobe Indesign" title="Adobe Indesign" className="svgIcon"></img>
-                <img src={adobeXd_cc} alt="Adobe Xd" title="Adobe Xd" className="svgIcon"></img>
-                <img src={lightroom_cc} alt="Adobe Lightroom" title="Adobe Lightroom" className="svgIcon"></img>
-                <img src={after_effects_cc} alt="Adobe AfterEffects" title="Adobe After Effects" className="svgIcon"></img>
-                <img src={premiere_cc} alt="Adobe PremierPro" title="Adobe Premier Pro" className="svgIcon"></img>
-                <img src={blender} alt="Blender" title="Blender" className="svgIcon"></img>
+            <div className="svg_icons_wrapper">
+                <img src={photoshop_cc} title="Adobe Photoshop" alt="Adobe Photoshop" className="svg_icon"></img>
+                <img src={illustrator_cc} alt="Adobe Illustrator" title="Adobe Illustrator" className="svg_icon"></img>
+                <img src={indesign_cc} alt="Adobe Indesign" title="Adobe Indesign" className="svg_icon"></img>
+                <img src={adobeXd_cc} alt="Adobe Xd" title="Adobe Xd" className="svg_icon"></img>
+                <img src={lightroom_cc} alt="Adobe Lightroom" title="Adobe Lightroom" className="svg_icon"></img>
+                <img src={after_effects_cc} alt="Adobe AfterEffects" title="Adobe After Effects" className="svg_icon"></img>
+                <img src={premiere_cc} alt="Adobe PremierPro" title="Adobe Premier Pro" className="svg_icon"></img>
+                <img src={blender} alt="Blender" title="Blender" className="svg_icon"></img>
             </div>
-            <div className="svgIconsWrapper-webdev">
-                <img src={html} alt="Html" title="Html" className="svgIcon"></img>
-                <img src={css} alt="CSS" title="CSS" className="svgIcon"></img>
-                <img src={javascript} alt="Javascript" title="Javascript" className="svgIcon"></img>
-                <img src={npm} alt="NPM" title="NPM" className="svgIcon"></img>
-                <img src={react} alt="React" title="React" className="svgIcon"></img>
-                <img src={gatsby} alt="Gatsby" title="Gatsby" className="svgIcon"></img>
+            <div className="svg_icons_wrapper-webdev">
+                <img src={html} alt="Html" title="Html" className="svg_icon"></img>
+                <img src={css} alt="CSS" title="CSS" className="svg_icon"></img>
+                <img src={javascript} alt="Javascript" title="Javascript" className="svg_icon"></img>
+                <img src={npm} alt="NPM" title="NPM" className="svg_icon"></img>
+                <img src={react} alt="React" title="React" className="svg_icon"></img>
+                <img src={gatsby} alt="Gatsby" title="Gatsby" className="svg_icon"></img>
             </div>
         </div>
         {/* <!--end of aboutTextWrapper-->}

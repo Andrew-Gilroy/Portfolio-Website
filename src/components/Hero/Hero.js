@@ -32,105 +32,104 @@ import HeroCSS from "../Hero/HeroCSS.css";
 
 const Hero = () => ( 
 <>
-<div className="heroBackground">
-        <div className="hero-LogoWrapper slide-in-fwd-center">
-           <h1 id="hero-AndrewGilroy" className="focus-in-expand">ANDREW<span id="hero-logo-colon">:</span>GILROY</h1>
+<div className="hero_background">
+        <div className="hero_logo_wrapper slide-in-fwd-center">
+           <h1 id="hero_andrew_gilroy" className="focus-in-expand">ANDREW<span id="hero_logo_colon">:</span>GILROY</h1>
         </div>
-        <div className="hero-TextWrapper">
+        <div className="hero_text_wrapper">
             <h1>GRAPHIC DESIGN</h1>
-            <h1 id="hero-Bullet2">&#9679;</h1>
+            <h1 id="hero_bullet2">&#9679;</h1>
             <h1>WEB DEVELOPMENT</h1>
-            <h1 id="hero-Bullet1">&#9679;</h1>
+            <h1 id="hero_bullet1">&#9679;</h1>
             <h1>3D RENDERING</h1>
         </div>
-        <ul className="image-grid">
-            <li className="image-grid-item-container"><img src={ tile1 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile2 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile3 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile4 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile5 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile6 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile7 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile8 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile9 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile10 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile11 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile12 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile13 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile14 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile15 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile16 } className="image-grid-item game-art" alt="tiled background"></img></li>
+        <ul className="image_grid">
+            <li className="image_grid_item_container"><img src={ tile1 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile2 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile3 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile4 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile5 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile6 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile7 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile8 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile9 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile10 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile11 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile12 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile13 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile14 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile15 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile16 } className="image_grid_item tile" alt="tiled background"></img></li>
 
-            <li className="image-grid-item-container"><img src={ tile17 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile3 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile14 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile18 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile22 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile6 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile1 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile5 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile9 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile20 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile19 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile12 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile13 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile23 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile18 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile10 } className="image-grid-item game-art" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile17 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile3 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile14 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile18 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile22 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile6 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile1 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile5 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile9 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile20 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile19 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile12 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile13 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile23 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile18 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile10 } className="image_grid_item tile" alt="tiled background"></img></li>
 
-            <li className="image-grid-item-container"><img src={ tile8 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile3 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile18 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile11 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile20 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile6 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile7 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile5 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile12 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile16 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile1 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile4 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile13 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile21 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile15 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile9 } className="image-grid-item game-art" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile8 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile3 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile18 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile11 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile20 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile6 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile7 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile5 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile12 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile16 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile1 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile4 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile13 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile21 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile15 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile9 } className="image_grid_item tile" alt="tiled background"></img></li>
 
-            <li className="image-grid-item-container"><img src={ tile22 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile2 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile3 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile19 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile5 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile6 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile7 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile8 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile9 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile10 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile11 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile1 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile13 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile18 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile15 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile19 } className="image-grid-item game-art" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile22 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile2 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile3 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile19 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile5 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile6 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile7 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile8 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile9 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile10 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile11 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile1 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile13 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile18 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile15 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile19 } className="image_grid_item tile" alt="tiled background"></img></li>
 
-            <li className="image-grid-item-container"><img src={ tile12 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile3 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile14 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile11 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile8 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile6 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile18 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile5 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile17 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile16 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile1 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile4 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile13 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile2 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile15 } className="image-grid-item game-art" alt="tiled background"></img></li>
-            <li className="image-grid-item-container"><img src={ tile9 } className="image-grid-item game-art" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile12 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile3 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile14 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile11 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile8 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile6 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile18 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile5 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile17 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile16 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile1 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile4 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile13 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile2 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile15 } className="image_grid_item tile" alt="tiled background"></img></li>
+            <li className="image_grid_item_container"><img src={ tile9 } className="image_grid_item tile" alt="tiled background"></img></li>
         </ul>
     </div>
-    
 </>
 )
 

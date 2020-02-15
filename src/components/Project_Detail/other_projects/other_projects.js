@@ -19,7 +19,7 @@ const OTHER = () => {
 return (
     <>
         <div className="divider">
-            <h2 className="dividerHeading">Other Projects</h2>
+            <h2 className="divider_heading">Other Projects</h2>
         </div>
         <div className="project_hero_image_wrapper">
             <img src={other_projects_hero_image} alt="Other Projects Hero" className="project_hero_image"></img>

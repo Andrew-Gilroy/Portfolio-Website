@@ -22,7 +22,7 @@ const Rendering_3d = () => {
 return (
         <>
         <div className="divider">
-                <h2 className="dividerHeading">3D Rendering</h2>
+                <h2 className="divider_heading">3D Rendering</h2>
             </div>
             <div className="project_hero_image_wrapper">
             <img src={rendering_3d_hero_image} alt="3D Rendering Hero" className="project_hero_image"></img>

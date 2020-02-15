@@ -12,30 +12,11 @@ import others_mockup from "../../images/other_projects/other_projects_7.png";
 //CSS
 import ProjectsCSS from "../Projects/ProjectsCSS.css";
 
-/* 
-var tl = new TimelineLite();
-tl.staggerFrom(".child-image", 1.5, {scale:1.5, y:-650, rotate: -45}, 0.8).staggerFrom(tl.add( TweenLite.to(".child-image", 3, {y:40, ease: "back.inOut(1.7)", repeat: -1, yoyo: true})));
-
-var tl = new TimelineMax(); 
-tl.staggerTo(".box", 1, {
-  cycle:{
-    //an array of values
-    backgroundColor:["red", "white", "#00f"],
-    //function that returns a value
-    y:function(index){
-      console.log(index)
-      return Math.random() * 300;
-    }
-  }
-}, 0.5);
-*/
-
-
 const Projects = () => ( 
 <>
     <a href="/" id="projects" className="hidden_A_link" aria-hidden="true"></a>
     <div className="divider">
-        <h2 className="dividerHeading">PROJECTS</h2>
+        <h2 className="divider_heading">PROJECTS</h2>
     </div>
     <a href="/" id="cupboard" className="hidden_A_link" aria-hidden="true"></a>
     <div className="project_flex_row animated_project_flex_row_1">

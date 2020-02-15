@@ -133,7 +133,7 @@ const Layout = ({ children, pageTitle }) => {
                 {/* The Close Button */}
                 <span className="close">&times;</span>
                 {/* Modal Content (The Image) */}
-                <img className="modal-content panzoom" id="img01" alt="zoomed project img"></img>
+                <img className="modal_content panzoom" id="img01" alt="zoomed project img"></img>
                 {/* Modal Caption (Image Text) */}
                 <div id="caption"></div>
             </div>
@@ -174,7 +174,7 @@ const Layout = ({ children, pageTitle }) => {
                 {/* The Close Button */}
                 <span className="close">&times;</span>
                 {/* Modal Content (The Image) */}
-                <img className="modal-content panzoom" id="img01" alt="zoomed project img"></img>
+                <img className="modal_content panzoom" id="img01" alt="zoomed project img"></img>
                 {/* Modal Caption (Image Text) */}
                 <div id="caption"></div>
             </div>
