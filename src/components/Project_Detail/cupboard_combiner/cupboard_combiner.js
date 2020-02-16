@@ -27,59 +27,59 @@ return (
         <div className="divider">
             <h2 className="divider_heading">Cupboard Combiner</h2>
         </div>
-            <div className="project_hero_image_wrapper">
+        <div className="project_hero_image_wrapper">
             <img src={cupboard_combiner_hero_image} alt="Cupboard Combiner Hero" className="project_hero_image"></img>
         </div>   
-            <div className="project_details_flex_row">
-                <div className="project_details_text_wrapper ">
-                    <h2 className="project_details_subheading">Project Summary</h2>
-                    <hr></hr>
-                    <p className="project_details_body_text">
-                    Cupboard Combiner is a react.js web app that generates random meals using your cupboard leftovers.
-                    </p>
-                    <a href="https://andrew-gilroy.github.io/CupboardCombiner/"  target="_blank">
-                        <button className="project_details_submit_button">LIVE DEMO</button>
-                    </a>
-                    <img src={cupboard_combiner_appBlueCropped} alt="Cupboard Combiner" className="project_details_image--fullWidth box_shadow"></img>
-                </div>
-                {/* <!--end of text wrapper--> */}
+        <div className="project_details_flex_row">
+            <div className="project_details_text_wrapper ">
+                <h2 className="project_details_subheading">Project Summary</h2>
+                <hr></hr>
+                <p className="project_details_body_text">
+                Cupboard Combiner is a react.js web app that generates random meals using your cupboard leftovers.
+                </p>
+                <a href="https://andrew-gilroy.github.io/CupboardCombiner/"  target="_blank">
+                    <button className="project_details_submit_button">LIVE DEMO</button>
+                </a>
+                <img src={cupboard_combiner_appBlueCropped} alt="Cupboard Combiner" className="project_details_image--fullWidth box_shadow"></img>
             </div>
+            {/* <!--end of text wrapper--> */}
+        </div>
         {/*  <!--end of row--> */}
-            <div className="project_details_flex_row">
-                <div className="project_details_text_wrapper">
-                    <h2 className="project_details_subheading">Initial Concept Development</h2>
-                    <hr></hr>
-                    <p className="project_details_body_text">Inspired by my girlfriend Ana's approach to cooking I decided to create a web app that can take a list of items supplied by the user and recombine them into random suggested meals.                 
-                    </p>            
-                    <img src={cupboard_combiner_notes2} alt="Cupboard combiner app notes" className="project_details_image--fullWidth box_shadow"></img>
-                </div>
-                {/* <!--end of text wrapper--> */}
+        <div className="project_details_flex_row">
+            <div className="project_details_text_wrapper">
+                <h2 className="project_details_subheading">Initial Concept Development</h2>
+                <hr></hr>
+                <p className="project_details_body_text">Inspired by my girlfriend Ana's approach to cooking I decided to create a web app that can take a list of items supplied by the user and recombine them into random suggested meals.                 
+                </p>            
+                <img src={cupboard_combiner_notes2} alt="Cupboard combiner app notes" className="project_details_image--fullWidth box_shadow"></img>
             </div>
-            {/* <!--end of row--> */}
-            <div className="project_details_flex_row">
-                <div className="project_details_text_wrapper ">
-                    <h2 className="project_details_subheading">Development Journey</h2>
-                    <hr></hr>
-                    <p className="project_details_body_text">
-                    As this was to be my first react.js project I undertook to learn the framework using the react docs. I initially laid out the components using my original diagrams and located the main application state in app.js. Following along with the docs I used a class based component architecture for app.js. This approach became quite verbose by having to initialise the constructor method and with repeated calls to .this.
-                    <br></br>
-                    <br></br>
-                    After learning more about the wonderful simplicity of using hooks I refactored my project accordingly. Admittedly it did take up valuable time to complete but it did deepen my understanding of the framework and how I can use it to write cleaner code.  
-                    <br></br>
-                    <br></br>
-                    <a href="https://github.com/Andrew-Gilroy/CupboardCombiner"  target="_blank" className="project_details_paragraph_link">CLICK HERE TO VIEW THE GITHUB REPO</a>
-                    </p>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <h3 className="project_details_subheading_h3">Example React Code</h3>
-                    <hr></hr>
-                    <p className="project_details_body_text">
-                    State management using a class based component. 
-                    App.js as the central source of truth. <br></br>
-                    </p>
-                <pre><code className="language-javascript"> {`
+            {/* <!--end of text wrapper--> */}
+        </div>
+        {/* <!--end of row--> */}
+        <div className="project_details_flex_row">
+            <div className="project_details_text_wrapper ">
+                <h2 className="project_details_subheading">Development Journey</h2>
+                <hr></hr>
+                <p className="project_details_body_text">
+                As this was to be my first react.js project I undertook to learn the framework using the react docs. I initially laid out the components using my original diagrams and located the main application state in app.js. Following along with the docs I used a class based component architecture for app.js. This approach became quite verbose by having to initialise the constructor method and with repeated calls to .this.
+                <br></br>
+                <br></br>
+                After learning more about the wonderful simplicity of using hooks I refactored my project accordingly. Admittedly it did take up valuable time to complete but it did deepen my understanding of the framework and how I can use it to write cleaner code.  
+                <br></br>
+                <br></br>
+                <a href="https://github.com/Andrew-Gilroy/CupboardCombiner"  target="_blank" className="project_details_paragraph_link">CLICK HERE TO VIEW THE GITHUB REPO</a>
+                </p>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <h3 className="project_details_subheading_h3">Example React Code</h3>
+                <hr></hr>
+                <p className="project_details_body_text">
+                State management using a class based component. 
+                App.js as the central source of truth. <br></br>
+                </p>
+            <pre><code className="language-javascript"> {`
     ///////////////////////////////////////////////  
     /// CLASS BASED COMPONENT STATE MANAGEMENT ////
     ///////////////////////////////////////////////
@@ -100,8 +100,7 @@ return (
     }   
                     `}</code></pre>
                     <p className="project_details_body_text">
-                        Here is the final app.js now refactored using React hooks as the central source of truth for the rest of the app. 
-
+                        Here is the final app.js now refactored using React hooks as the central source of truth for the rest of the app.
                     </p>
                     <pre><code className="language-javascript"> {`
     ///////////////////////////////  

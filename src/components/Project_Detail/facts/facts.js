@@ -28,7 +28,7 @@ return (
         <div className="project_details_flex_row">
             <div className="project_details_text_wrapper">
                 <h2 className="project_details_subheading">Initial Brief</h2>
-                
+                <hr></hr>
                 <p className="project_details_body_text">
                     This project required the creation of a full set of design collateral and branding for a fictitious website, Facts.com. Facts.com is a website/service that seeks to dispel common misconceptions.
                     <br></br>

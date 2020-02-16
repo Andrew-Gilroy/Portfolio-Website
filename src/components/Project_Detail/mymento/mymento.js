@@ -18,8 +18,8 @@ import mymento_video_storyboard3 from "../../../images/mymento/mymento_video_sto
 
 
 //CSS
-import project_mymentoCSS from "../../project_detail/mymento/mymento.css";
 import project_detailsCSS from "../../project_detail/project_detail.css";
+import project_mymentoCSS from "../../project_detail/mymento/mymento.css";
 
 
 const Mymento = () => { 
