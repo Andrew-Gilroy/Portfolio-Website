@@ -32,7 +32,8 @@ return (
         </div>   
             <div className="project_details_flex_row">
                 <div className="project_details_text_wrapper ">
-                    <h2 className="project_details_subheading">Project Summary</h2>           <hr></hr>
+                    <h2 className="project_details_subheading">Project Summary</h2>
+                    <hr></hr>
                     <p className="project_details_body_text">
                     Cupboard Combiner is a react.js web app that generates random meals using your cupboard leftovers.
                     </p>

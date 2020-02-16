@@ -17,9 +17,6 @@ import global from "../styles/global.css";
 
 //JS Scripts
 
-//I MIGHT NEED TO ADD HELMET PLUGIN TAGS
-
-/* dont forget to add links to google fonts for "source sans pro" */
 
 const IndexPage = () => (
   

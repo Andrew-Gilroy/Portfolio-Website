@@ -1,10 +1,8 @@
 import React from "react";
-/* import styled from "styled-components";
- */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAdobe } from '@fortawesome/free-brands-svg-icons';
 import { faUsers, faPencilAlt, faCode, faVideo, faThLarge, faBullhorn, faCameraRetro  } from '@fortawesome/free-solid-svg-icons';
-// <FontAwesomeIcon icon={faTimes} className="closebtn" onclick="closeNav()"/>
+
 //IMAGE IMPORTS
 import profile_image from "../../images/profile_picture/profile_image_cropped.png";
 import photoshop_cc from "../../images/svgicons/photoshop-cc.svg";
@@ -21,7 +19,6 @@ import javascript from "../../images/svgicons/javascript.svg";
 import npm from "../../images/svgicons/npm.svg";
 import react from "../../images/svgicons/react.svg";
 import gatsby from "../../images/svgicons/gatsby.svg";
-
 
 //CSS
 import AboutCSS from "../About/AboutCSS.css";

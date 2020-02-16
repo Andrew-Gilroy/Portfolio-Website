@@ -12,7 +12,6 @@ import Footer from "../components/Footer/Footer.js";
 
 //JS Scripts
 /* <Link to="/">Go back to the homepage</Link> */
-/* don't forget to add links to google fonts for "source sans pro" */
 
 const Project_Rendering_3d = () => ( 
   <>

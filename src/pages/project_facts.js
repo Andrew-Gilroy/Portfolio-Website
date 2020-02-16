@@ -12,7 +12,6 @@ import Footer from "../components/Footer/Footer.js";
 //CSS
 
 //JS Scripts
-/* don't forget to add links to google fonts for "source sans pro" */
 
 const Project_Facts = () => ( 
   <>

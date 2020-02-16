@@ -11,8 +11,6 @@ import Footer from "../components/Footer/Footer.js";
 //CSS
 
 //JS Scripts
-/* <Link to="/">Go back to the homepage</Link> */
-/* don't forget to add links to google fonts for "source sans pro" */
 
 const Project_Other_Projects = () => ( 
   <>

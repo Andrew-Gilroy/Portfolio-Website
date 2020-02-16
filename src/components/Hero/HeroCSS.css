@@ -202,15 +202,6 @@
     color: white;
     text-shadow: 0 0.2rem 0 #fe3b1f;
     filter: drop-shadow(0px 1px 0.1rem rgba(0, 0, 0, 1));
-    
-    //text-shadow: 0 0.3rem 0.1rem #2c2c33;
-    /*-webkit-filter: drop-shadow(0 0.1rem 0.1rem #ffffff);
-    filter: drop-shadow(0 0.1rem 0.1rem #ffffff);*/
-    
-    /*color: white;
-    text-shadow: 0 0.3rem 0 hsl(8, 89%, 46%);
-    filter: drop-shadow(0px 1px 0.1rem rgba(0, 0, 0, 1));
-    */
     z-index: 3;
 }
 
@@ -279,7 +270,6 @@
         letter-spacing: -0.4rem;
         text-align: center;
         text-shadow: 0 0.3rem 0.1rem #2c2c33;
-       /* filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.84));*/
     }
 
     #hero_logo_colon {
@@ -608,5 +598,8 @@
         line-height: 3.2rem;
         padding: 0 0 0.5rem 0;
     }
-
+    .image_grid_item.tile {
+        width: 163px;
+        height: 103px;
+    }
 }

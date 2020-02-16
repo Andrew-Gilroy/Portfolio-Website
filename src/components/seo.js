@@ -46,6 +46,9 @@ I MIGHT NEED TO DISABLE THIS WHEN LIVE */
     >
 <meta name="keywords" content="Web Development, Graphic Design, UX, 3D Rendering, React, Agile, HTML, CSS, JavaScript"
 ></meta>
+<meta name="description" content="Andrew Gilroy's personal portfolio website.
+Showcasing - Graphic Design, Web Development and 3D Rendering projects."
+></meta>
 
 
 {/*<!-- Open Graph / Facebook -->*/}
@@ -103,26 +106,3 @@ SEO.propTypes = {
 }
 
 export default SEO
-/*
-<!-- Primary Meta Tags -->
-<title>Andrew Gilroy - Design</title>
-<meta name="title" content="Andrew Gilroy - Design">
-<meta name="description" content="Andrew Gilroy's personal portfolio website.
-Showcasing - Graphic Design, Web Development and 3D Rendering projects.">
-
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://metatags.io/">
-<meta property="og:title" content="Andrew Gilroy - Design">
-<meta property="og:description" content="Andrew Gilroy's personal portfolio website.
-Showcasing - Graphic Design, Web Development and 3D Rendering projects.">
-<meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://metatags.io/">
-<meta property="twitter:title" content="Andrew Gilroy - Design">
-<meta property="twitter:description" content="Andrew Gilroy's personal portfolio website.
-Showcasing - Graphic Design, Web Development and 3D Rendering projects.">
-<meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-*/

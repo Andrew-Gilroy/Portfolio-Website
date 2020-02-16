@@ -20,7 +20,6 @@ const Projects = () => (
     </div>
     <a href="/" id="cupboard" className="hidden_A_link" aria-hidden="true"></a>
     <div className="project_flex_row animated_project_flex_row_1">
-{/* testing of animated gsap scrollmagic classes */}
     <Link to="/project_cupboard/" className="project_page_image_link">
       <img src={cupboard_combiner_mockup} alt="Cupboard Combiner App Mockup" className="project_image"></img>
     </Link>

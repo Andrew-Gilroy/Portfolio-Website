@@ -33,6 +33,17 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            options: {
+              fonts: [
+                {
+                  family: `Source Sans Pro`,
+                  variants: [`300`, `400`]
+                }                
+              ],
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               
