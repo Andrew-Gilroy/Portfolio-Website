@@ -204,7 +204,7 @@ const Layout = ({ children, pageTitle }) => {
                   </div>
               </a>
               <nav>
-              <Link to="/#projects">&#10237; RETURN TO PROJECTS</Link>
+              <Link to="/#projects" id="nav_return_to_projects_link">&#10237; BACK TO PROJECTS</Link>
               </nav>
           </header>
           <main>{children}</main>
