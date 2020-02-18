@@ -33,7 +33,7 @@ return (
         <div className="project_hero_image_wrapper">
             <img src={myMento_hero_image} alt="Mymento Hero" className="project_hero_image"></img>
         </div>   
-        <div className="project_details_flex_row">
+        <div className="project_details_flex_row --margin-top">
 
             <div className="project_details_text_wrapper ">
                 <h2 className="project_details_subheading">Initial Brief &amp; Group Formation</h2>

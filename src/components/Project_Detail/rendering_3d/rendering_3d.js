@@ -27,7 +27,7 @@ return (
             <div className="project_hero_image_wrapper">
             <img src={rendering_3d_hero_image} alt="3D Rendering Hero" className="project_hero_image"></img>
         </div>
-    <div className="project_details_flex_row">
+    <div className="project_details_flex_row --margin-top">
         <div className="project_details_text_wrapper ">
             <h2 className="project_details_subheading">Methodology</h2>
             <hr></hr>

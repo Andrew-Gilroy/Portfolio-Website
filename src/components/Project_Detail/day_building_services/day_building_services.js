@@ -8,7 +8,7 @@ import day_building_web_mockup_1 from "../../../images/day_building/day_building
 import day_building_web_mockup_2 from "../../../images/day_building/day_building_web_mockup2.png";
 
 //CSS
-import project_detailsCSS from "../../project_detail/project_detail.css";
+
 
 const DAYBUILDING = () => { 
     
@@ -20,7 +20,7 @@ return (
         <div className="project_hero_image_wrapper">
             <img src={day_building_hero} alt="Day Building Hero" className="project_hero_image"></img>
         </div>   
-    <div className="project_details_flex_row">
+    <div className="project_details_flex_row --margin-top">
         <div className="project_details_text_wrapper ">
             <h2 className="project_details_subheading">Initial Brief</h2>
             <hr></hr>

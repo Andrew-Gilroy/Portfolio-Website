@@ -22,7 +22,7 @@ return (
         <img src={telford_hero_image} alt="Telford Hero" className="project_hero_image"></img>
     </div>   
     {/*<!--PROJECTS SECTION-->*/}
-    <div className="project_details_flex_row">
+    <div className="project_details_flex_row --margin-top">
         <div className="project_details_text_wrapper ">
             <h2 className="project_details_subheading">Initial Brief</h2>
             <hr></hr>

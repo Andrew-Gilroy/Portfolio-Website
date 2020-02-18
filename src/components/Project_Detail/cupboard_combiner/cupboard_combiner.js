@@ -13,7 +13,7 @@ import cupboard_combiner_appLightMobile from "../../../images/cupboard_combiner/
 
 
 //CSS
-
+import project_detailsCSS from "../../project_detail/project_detail.css";
 
 const Project_Cupboard_Combiner = () => { 
 
@@ -29,9 +29,10 @@ return (
         </div>
         <div className="project_hero_image_wrapper">
             <img src={cupboard_combiner_hero_image} alt="Cupboard Combiner Hero" className="project_hero_image"></img>
-        </div>   
-        <div className="project_details_flex_row">
-            <div className="project_details_text_wrapper ">
+        </div>
+        
+        <div className="project_details_flex_row --margin-top">
+            <div className="project_details_text_wrapper">
                 <h2 className="project_details_subheading">Project Summary</h2>
                 <hr></hr>
                 <p className="project_details_body_text">
@@ -178,6 +179,7 @@ return (
                 </div>
                 {/* <!--end of text wrapper--> */}
             </div>
+            
             </>
     )
 }

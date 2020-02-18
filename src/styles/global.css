@@ -45,6 +45,7 @@ body {
     box-shadow: 0px 0px 6px #625757;
     /* overflow-x: initial; */
 }
+
 @font-face {
     font-family: 'Antonio';
     src: url('../../static/fonts/antonio-bold.eot');
