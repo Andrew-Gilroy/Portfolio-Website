@@ -14,16 +14,7 @@ import Panzoom from '@panzoom/panzoom';
 
 const Layout = ({ children, pageTitle }) => {
     
-    // Panzoom for zoomed image "modal"
-    // Get the modal
-    var modal = document.querySelector('#myModal');
-  
-    // panzoom function is then invoked targeting all elements with classname "panzoom"
-    // Documentation for Panzoom here - https://github.com/timmywil/panzoom/blob/master/README.md#Documentation
     
-    var modalImg = document.querySelector("#img01");
-    var captionText = document.querySelector("#caption");
-        
     //reveals scroll to top button after page load (useEffect on functional component)
     useEffect(() => {
         window.onscroll = function() {
@@ -35,35 +26,27 @@ const Layout = ({ children, pageTitle }) => {
                 document.getElementById('scrolltop').style.display="none";
             }
         };
-        }, []); 
+    }, []); 
+
+    // Panzoom for zoomed image "modal"
+    // Get the modal
+    var modal = document.querySelector('#myModal');
   
-    [].forEach.call(document.querySelectorAll('.project_details_image--fullWidth'), function(el) {
-        el.addEventListener('click', function() {
-            modal.style.display = "flex";
-            var newSrc = this.src;
-            const zoomedElement = document.querySelector(".panzoom");
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            modalImg.setAttribute('src', newSrc);
-            captionText.innerHTML = this.alt;
-
-        const panzoom = Panzoom(zoomedElement, {
-            cursor: "grab",
-            minScale: 0.8,
-            maxScale: 4,
-        });
-        zoomedElement.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
-    });
-    });
-
-    [].forEach.call(document.querySelectorAll('.project_details_image--halfWidth'), function(el) {
+    // panzoom function is then invoked targeting all elements with classname "panzoom"
+    // Documentation for Panzoom here - https://github.com/timmywil/panzoom/blob/master/README.md#Documentation
+    
+    var modalImg = document.querySelector("#img01");
+    var captionText = document.querySelector("#caption");
+  
+    //selects all images & adds event listeners - various selectors separated by comma. I used dev tools to help generate the selectors.  
+    [].forEach.call(document.querySelectorAll('div.project_details_image--fullWidth > picture > img, div.project_details_image_myMento_phone > picture > img, img.project_details_image--halfWidth, img.project_details_image--fullWidth, div.project_details_image_other_projects--fullWidth > picture > img'), function(el) {
     el.addEventListener('click', function() {
             modal.style.display = "flex";
-            var newSrc = this.src;
+            var newSrc = this.currentSrc;
             const zoomedElement = document.querySelector(".panzoom");
             // Get the image and insert it inside the modal - use its "alt" text as a caption
             modalImg.setAttribute('src', newSrc);
             captionText.innerHTML = this.alt;
-
             const panzoom = Panzoom(zoomedElement, {
                 cursor: "grab",
                 minScale: 0.8,
@@ -72,25 +55,6 @@ const Layout = ({ children, pageTitle }) => {
             zoomedElement.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
         });
     });
-
-    [].forEach.call(document.querySelectorAll('.project_details_image_myMento_phone'), function(el) {
-    el.addEventListener('click', function() {
-            modal.style.display = "flex";
-            var newSrc = this.src;
-            const zoomedElement = document.querySelector(".panzoom");
-            // Get the image and insert it inside the modal - use its "alt" text as a caption
-            modalImg.setAttribute('src', newSrc);
-            captionText.innerHTML = this.alt;
-
-            const panzoom = Panzoom(zoomedElement, {
-                cursor: "grab",
-                minScale: 0.8,
-                maxScale: 4,
-            });
-            zoomedElement.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
-        });
-    });
-
     
     //close the image modal after X is clicked
     [].forEach.call(document.querySelectorAll('.close'), function(el) {

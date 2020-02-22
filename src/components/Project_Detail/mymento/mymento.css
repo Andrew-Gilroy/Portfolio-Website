@@ -27,6 +27,7 @@
 }
 
 .project_details_image_myMento_phone {
+    display: inline-block;
     width: 48%;
     margin-bottom: 2rem;
     cursor: zoom-in;

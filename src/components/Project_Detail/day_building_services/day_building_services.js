@@ -1,24 +1,52 @@
 
 import React from 'react';
+import Img from "gatsby-image";
+import { useStaticQuery, graphql } from "gatsby";
 
 //IMAGE IMPORTS
-import day_building_hero from "../../../images/day_building/day_building_hero.png";
 import day_building_logo from "../../../images/svg/day_logo_black.svg";
+/* import day_building_hero from "../../../images/day_building/day_building_hero.png";
 import day_building_web_mockup_1 from "../../../images/day_building/day_building_web_mockup1.png";
-import day_building_web_mockup_2 from "../../../images/day_building/day_building_web_mockup2.png";
+import day_building_web_mockup_2 from "../../../images/day_building/day_building_web_mockup2.png"; */
 
 //CSS
 
+//graphQL snippet to reduce code repetition within query below
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
 
 const DAYBUILDING = () => { 
     
+    const data = useStaticQuery(
+        graphql`
+        query {
+            day_building_hero: file(relativePath: { eq: "day_building/day_building_hero.png" }) {
+                ...fluidImage
+            }
+            day_building_web_mockup_1: file(relativePath: { eq: "day_building/day_building_web_mockup1.png" }) {
+                ...fluidImage
+            }
+            day_building_web_mockup_2: file(relativePath: { eq: "day_building/day_building_web_mockup2.png" }) {
+                ...fluidImage
+            }
+          }
+      `
+    );
+
 return (
     <>
     <div className="divider">
         <h2 className="divider_heading">Day Building Services</h2>
     </div>
         <div className="project_hero_image_wrapper">
-            <img src={day_building_hero} alt="Day Building Hero" className="project_hero_image"></img>
+            <Img fluid={data.day_building_hero.childImageSharp.fluid} alt="project hero banner" className="project_hero_image"/>
         </div>   
     <div className="project_details_flex_row --margin-top">
         <div className="project_details_text_wrapper ">
@@ -49,8 +77,8 @@ return (
             <p className="project_details_body_text">
                 The previous website which was dark, outdated and cluttered was redesigned to give the clients work a modern and friendly showcase platform. Bright imagery was utilised to showcase how the client could deliver projects that would increase the value of their homes by opening up and renovating the available living spaces. Polaroid style images when then used to convey a sense of personability in an attempt at making the business appear more approachable and to encourage clients to imagine how their own projects might turn out.
             </p>
-            <img src={day_building_web_mockup_1} alt="Day Building Services - Home Page" className="project_details_image--fullWidth"></img>
-            <img src={day_building_web_mockup_2} alt="Day Building Services - Services Page" className="project_details_image--fullWidth"></img>
+            <Img fluid={data.day_building_web_mockup_1.childImageSharp.fluid} alt="Day Building Services - Home Page" className="project_details_image--fullWidth"/>
+            <Img fluid={data.day_building_web_mockup_2.childImageSharp.fluid} alt="Day Building Services - Services Page" className="project_details_image--fullWidth"/>
         </div>
         {/*<!--end of text wrapper-->*/}
     </div>

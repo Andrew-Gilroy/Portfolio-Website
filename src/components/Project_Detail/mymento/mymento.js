@@ -1,29 +1,69 @@
-
 import React from 'react';
-
-//IMAGE IMPORTS
-import myMento_hero_image from "../../../images/mymento/mymento_hero_image.png";
-import mymento_gravestones from "../../../images/mymento/gravestones2.jpg";
-import mymento_persona from "../../../images/mymento/mymento_persona1.png";
-import mymento_mock1 from "../../../images/mymento/mymento_mock1.png";
-import mymento_mock2stretch from "../../../images/mymento/mymento_mock2stretch.png";
-import mymento_std from "../../../images/mymento/mymento_std.png";
-import mymento_phone_mockup1 from "../../../images/mymento/mymento_phone_mockup1.png";
-import mymento_phone_mockup2 from "../../../images/mymento/mymento_phone_mockup2.png";
-import mymento_phone_mockup3 from "../../../images/mymento/mymento_phone_mockup3.png";
-import mymento_phone_mockup4 from "../../../images/mymento/mymento_phone_mockup4.png";
-import mymento_video_storyboard1 from "../../../images/mymento/mymento_video_storyboard1.png";
-import mymento_video_storyboard2 from "../../../images/mymento/mymento_video_storyboard2.png";
-import mymento_video_storyboard3 from "../../../images/mymento/mymento_video_storyboard3.png";
-
+import Img from "gatsby-image";
+import { useStaticQuery, graphql } from "gatsby";
 
 //CSS
 import project_detailsCSS from "../../project_detail/project_detail.css";
 import project_mymentoCSS from "../../project_detail/mymento/mymento.css";
 
+//graphQL snippet to reduce code repetition within query below
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
 
 const Mymento = () => { 
 
+    const data = useStaticQuery(
+        graphql`
+        query {
+            mymento_hero_image: file(relativePath: { eq: "mymento/mymento_hero_image.png" }) {
+                ...fluidImage
+            }
+            mymento_gravestones: file(relativePath: { eq: "mymento/gravestones2.jpg" }) {
+                ...fluidImage
+            }
+            mymento_persona: file(relativePath: { eq: "mymento/mymento_persona1.png" }) {
+                ...fluidImage
+            }
+            mymento_mock1: file(relativePath: { eq: "mymento/mymento_mock1.png" }) {
+                ...fluidImage
+            }
+            mymento_mock2stretch: file(relativePath: { eq: "mymento/mymento_mock2stretch.png" }) {
+                ...fluidImage
+            }
+            mymento_std: file(relativePath: { eq: "mymento/mymento_std.png" }) {
+                ...fluidImage
+            }
+            mymento_phone_mockup1: file(relativePath: { eq: "mymento/mymento_phone_mockup1.png" }) {
+                ...fluidImage
+            }
+            mymento_phone_mockup2: file(relativePath: { eq: "mymento/mymento_phone_mockup2.png" }) {
+                ...fluidImage
+            }
+            mymento_phone_mockup3: file(relativePath: { eq: "mymento/mymento_phone_mockup3.png" }) {
+                ...fluidImage
+            }
+            mymento_phone_mockup4: file(relativePath: { eq: "mymento/mymento_phone_mockup4.png" }) {
+                ...fluidImage
+            }
+            mymento_video_storyboard1: file(relativePath: { eq: "mymento/mymento_video_storyboard1.png" }) {
+                ...fluidImage
+            }
+            mymento_video_storyboard2: file(relativePath: { eq: "mymento/mymento_video_storyboard2.png" }) {
+                ...fluidImage
+            }
+            mymento_video_storyboard3: file(relativePath: { eq: "mymento/mymento_video_storyboard3.png" }) {
+                ...fluidImage
+            }
+          }
+      `
+    );
     
 return (
         <>
@@ -31,7 +71,7 @@ return (
             <h2 className="divider_heading">myMento</h2>
         </div>
         <div className="project_hero_image_wrapper">
-            <img src={myMento_hero_image} alt="Mymento Hero" className="project_hero_image"></img>
+            <Img fluid={data.mymento_hero_image.childImageSharp.fluid} alt="project hero banner" className="project_hero_image"/>
         </div>   
         <div className="project_details_flex_row --margin-top">
 
@@ -53,8 +93,7 @@ return (
                     <br/><br/>
                     Whilst visiting a local graveyard I began to think more about personal history and the legacy we leave behind. During my visit I noticed that very little information was given on each headstone. Carved into the rock was a bland summation of a persons life that served little to inform those who wished to learn more. Within the span of 2-3 generations very little information is known about previous family members. Their life and their experiences become largely forgotten and lost to the mists of time. This lead me to explore the concept of legacy and how we could use technology to preserve the thoughts and memories of those closest to us to provide comfort for those left behind and also inform future generations to come.
                     <br/><br/>
-                    
-                    <img src={mymento_gravestones} alt="myMento - Gravestone" className="project_details_image--fullWidth box_shadow"></img>
+                    <Img fluid={data.mymento_gravestones.childImageSharp.fluid} alt="myMento - Gravestone" className="project_details_image--fullWidth box_shadow"/>
                     At this point I conceived the idea behind myMento (my-momento). A digital product that would enable us to permanently store our thoughts, experiences and precious memories so that one day they can be accessed by later generations to come.</p>
             </div>
         {/* <!--end of text wrapper--> */}    
@@ -76,9 +115,6 @@ return (
             </ul>
             <p className="project_details_body_text">
                 We conducted 20 interviews each lasting approximately 1 hour. We prepared a list of relevant questions enquiring about typical behaviours, technology competencies, pain points and previous positive product interactions.
-               {/*  <!--                <br><br>
-                Through our research we found that many of our interviewees were concerned about their legacy and what if anything they would leave behind for their descendants. Many of our interviewees expressed remorse that they had not been keeping a journal, diary or something similar or had not been making regular entries. Often they explained that their busy daily schedule left them with very little time to sit down and write.
-                <br><br>--> */}
                 <br></br>
                 Through our research the following patterns emerged.
             </p>
@@ -100,7 +136,8 @@ return (
                 In the initial concept phase we proposed a feature that would enable users to dictate a will or leave behind legal instructions for next of kin. We found through our interviews that many users were not actively concerned with wills and as such we removed this part of the product. Another feature that was initially explored was to possibly store medical information that may be of use in identifying hereditary diseases but our interviewees considered this kind of data to be non important to them.<br></br>
                 After we had collated our interview data we created several user personas and user stories. These were used to help validate our design decisions, modify the initial concept and ultimately create a product that would allow users to achieve their goals.
             </p>
-            <img src={mymento_persona} alt="myMento - Persona" className="project_details_image--fullWidth box_shadow"></img>
+           <Img fluid={data.mymento_persona.childImageSharp.fluid} alt="myMento - Persona" className="project_details_image--fullWidth box_shadow"/>
+
         </div>
 {/*         <!--end of text wrapper-->    */} 
         </div>
@@ -110,17 +147,17 @@ return (
             <h3 className="project_details_subheading">Design</h3>
             <hr></hr>
             <p className="project_details_body_text">Based on my initial sketches I then used balsalmiq to design a set of wireframes based on our list of validated functional requirements.</p>
-            <img src={mymento_mock1} alt="myMento - Profile Page" className="project_details_image_myMento_phone --margin_right"></img>
-            <img src={mymento_mock2stretch} alt="myMento - Context Menu" className="project_details_image_myMento_phone --margin_left"></img>
+            <Img fluid={data.mymento_mock1.childImageSharp.fluid} alt="myMento - Profile Page" className="project_details_image_myMento_phone --margin_right"/>
+            <Img fluid={data.mymento_mock2stretch.childImageSharp.fluid} alt="myMento - Context Menu" className="project_details_image_myMento_phone --margin_left"/>
             
             <p className="project_details_body_text">A state transition diagram along with an application site map were created to map out each of the available functions and how user interactions would be handled by the app. </p>
-            <img src={mymento_std} alt="State Transition Diagram" className="project_details_image--fullWidth "></img>
+            <Img fluid={data.mymento_std.childImageSharp.fluid} alt="State Transition Diagram" className="project_details_image--fullWidth"/>
             
-             <p className="project_details_body_text">High fidelity mockups were created using Adobe Xd which resulted in a clickable prototype which was later showcased in our product demonstration video.  </p>
-            <img src={mymento_phone_mockup1} alt="myMento - Profile Page" className="project_details_image_myMento_phone --margin_right"></img>
-            <img src={mymento_phone_mockup2} alt="myMento - Interview Prompts" className="project_details_image_myMento_phone --margin_left"></img>
-            <img src={mymento_phone_mockup3} alt="myMento - Audio Recording" className="project_details_image_myMento_phone --margin_right"></img>
-            <img src={mymento_phone_mockup4} alt="myMento - Context Menu/Share" className="project_details_image_myMento_phone --margin_left"></img>
+             <p className="project_details_body_text">High fidelity mockups were created using Adobe Xd which resulted in a clickable prototype which was later showcased in our product demonstration video.</p>
+            <Img fluid={data.mymento_phone_mockup1.childImageSharp.fluid} alt="myMento - Profile Page" className="project_details_image_myMento_phone --margin_right"/>
+            <Img fluid={data.mymento_phone_mockup2.childImageSharp.fluid} alt="myMento - Interview Prompts" className="project_details_image_myMento_phone --margin_left"/>
+            <Img fluid={data.mymento_phone_mockup3.childImageSharp.fluid} alt="myMento - Audio Recording" className="project_details_image_myMento_phone --margin_right"/>
+            <Img fluid={data.mymento_phone_mockup4.childImageSharp.fluid} alt="myMento - Context Menu/Share" className="project_details_image_myMento_phone --margin_left"/>
         </div>
         {/*         <!--end of text wrapper--> */}    
         </div>
@@ -130,9 +167,9 @@ return (
             <h3 className="project_details_subheading">Product Demonstration</h3>
             <hr></hr>
             <p className="project_details_body_text">The culmination of our group project was the creation of a product demonstration video. The aim here was to present the key features our concept and how it could be used to fulfill the needs of a typical user. The video was made using a range of Adobe suite software, illustrator, Xd, aftereffects and premier pro. Our product demonstration video was well received by both our course lecturers and fellow peers.</p>
-            <img src={mymento_video_storyboard1} alt="myMento - Video storyboard 1" className="project_details_image--fullWidth"></img>
-            <img src={mymento_video_storyboard2} alt="myMento - Video storyboard 2" className="project_details_image--fullWidth"></img>
-            <img src={mymento_video_storyboard3} alt="myMento - Video storyboard 3" className="project_details_image--fullWidth"></img>
+            <Img fluid={data.mymento_video_storyboard1.childImageSharp.fluid} alt="myMento - Video storyboard 1" className="project_details_image--fullWidth"/>
+            <Img fluid={data.mymento_video_storyboard2.childImageSharp.fluid} alt="myMento - Video storyboard 2" className="project_details_image--fullWidth"/>
+            <Img fluid={data.mymento_video_storyboard3.childImageSharp.fluid} alt="myMento - Video storyboard 3" className="project_details_image--fullWidth"/>
             <div className="iframe_wrapper">
                 <iframe src="https://www.youtube.com/embed/2c36iAVauaY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>

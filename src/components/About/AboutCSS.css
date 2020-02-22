@@ -29,7 +29,7 @@
     -ms-flex-item-align: end;
     align-self: end;
     overflow: hidden;
-    background-image: url(../../images/profile_picture/andrewProfileImage.png), url(../../images/logos/logo_bg_orange.svg);
+    background-image: url(../../images/profile_picture/andrew_profile_image.png), url(../../images/logos/logo_bg_orange.svg);
     background-size: 105rem, 100rem;
     background-position: right bottom, 115% 200%;
     background-repeat: no-repeat;

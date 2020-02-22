@@ -81,7 +81,7 @@ body {
     position: fixed;
     bottom: 2rem;
     right: 0;
-    z-index: 90;
+    z-index: 5;
 }
 
 .scroll {
@@ -98,7 +98,7 @@ body {
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
-    z-index: 90;
+    z-index: 5;
     opacity: 0.7;
 }
 

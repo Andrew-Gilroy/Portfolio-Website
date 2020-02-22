@@ -67,7 +67,7 @@
     -webkit-box-shadow: 0px 0.2rem 0.6rem rgba(2, 9, 60, 0.83);
     box-shadow: 0px 0.2rem 0.6rem rgba(2, 9, 60, 0.83);
     position: relative;
-    z-index: 13;
+    z-index: 6;
 }
 
 #form_email_svg_icon {

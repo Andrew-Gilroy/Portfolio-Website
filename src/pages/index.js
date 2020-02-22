@@ -5,7 +5,6 @@ import SEO from "../components/seo";
 import Helmet from "react-helmet"
 
 //COMPONENTS
-//import NavBar from "../components/NavBar/NavBar.js";
 import Hero from "../components/Hero/Hero.js";
 import About from "../components/About/About.js";
 import Projects from "../components/Projects/Projects.js";

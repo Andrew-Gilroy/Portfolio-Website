@@ -54,7 +54,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     height: 100vh;
-    min-height: 1000px;
+    min-height: 800px;
     min-width: 2200px;
     /*edit this to be large to prevent gaps on the left & right*/
     /*padding: 0.861px;*/
@@ -65,15 +65,17 @@
 
 .image_grid_item_container {
     list-style: none;
-    max-width: 808px;
+    width: 300px;
+    height: 190px;
+   /*  max-width: 808px;
     min-width: 150px;
-    max-height: 218px;
+    max-height: 218px; */
     overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-
+ 
 .image_grid_item {
     height: auto;
     display: block;
@@ -82,8 +84,12 @@
 }
 
 .image_grid_item.tile {
-    width: 300px;
-    height: 190px;
+    /* width: 300px;
+    height: 190px; */
+    width: 100%;
+    height: 100%;
+    /* width: 300px;
+    height: 190px; */
 }
 
 /*HERO LOGO*/
@@ -98,6 +104,7 @@
     background-position: center;
     line-height: 0;
     margin: 20vh auto 2vh auto;
+    position: relative;
     z-index: 3;
 }
 
@@ -179,6 +186,7 @@
     height: auto;
     margin: 0 auto;
     text-align: center;
+    position: relative;
     z-index: 3;
     animation: opacity-Fade-in 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
@@ -324,9 +332,10 @@
     }
 
     .image_grid_item_container {
-        list-style: none;
-        width: 3%;
-        overflow: hidden;
+        //list-style: none;
+        width: 33%;
+       // width: auto;
+        //overflow: hidden;
     }
 
     .image_grid_item {
@@ -352,7 +361,7 @@
         top: 12vh;
         width: 100%;
         height: 28rem;
-        background-size: 25rem;
+        background-size: 21rem;
         margin: 2vh auto 2% auto;
     }
 
@@ -423,20 +432,25 @@
     }
 
     .image_grid_item_container {
-        list-style: none;
+        /* list-style: none;
         max-width: 10%;
         min-width: none;
         max-height: none;
         min-height: none;
         margin: 0 0;
-        overflow: hidden;
+        overflow: hidden; */
+        
+        width: 30%;
+        //height: auto;
+        /* min-width: none;
+        max-height: none;
+        min-height: none; */
+        margin: 0 0;
+        /* overflow: hidden; */
     }
 
     .image_grid_item {
-        height: auto;
-        display: block;
         opacity: 0.2;
-        margin: auto;
     }
 
     .image_grid_item.tile {
@@ -514,30 +528,26 @@
     /*ANIMATED HERO SECTION*/
     /**********************************************************/
     .image_grid {
-        height: 573.5px;
-        max-height: 400px;
-        min-width: 800px;
-        pointer-events: none;
-        position: absolute;
+        height: 700px;
+        margin: auto;
+        min-width: 400px;
+        min-height: 700px;
+        /*edit this to be large to prevent gaps on the left & right*/
     }
-
+    
     .image_grid_item_container {
-        list-style: none;
-        max-width: 10%;
-        min-width: none;
-        max-height: none;
-        min-height: none;
-        margin: 0 0;
-        overflow: hidden;
+       
+        height: auto;
+        width: 48%;
     }
-
+    
     .image_grid_item {
         height: auto;
         display: block;
         opacity: 0.2;
         margin: auto;
     }
-
+    
     .image_grid_item.tile {
         width: 100%;
     }
@@ -601,8 +611,5 @@
         line-height: 3.2rem;
         padding: 0 0 0.5rem 0;
     }
-    .image_grid_item.tile {
-        width: 163px;
-        height: 103px;
-    }
+
 }

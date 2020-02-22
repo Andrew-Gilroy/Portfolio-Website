@@ -234,7 +234,7 @@
     flex-direction: column;
     position: fixed;
     /* Stay in place */
-    z-index: 101;
+    z-index: 9;
     /* Sit on top */
     padding: 0;
     /* Location of the box */
@@ -276,8 +276,9 @@
     text-align: center;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    z-index: 102;
+    z-index: 10;
     background-color: black;
+    border-radius: 5px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -318,7 +319,7 @@
 .close {
     position: absolute;
     top: 15px;
-    z-index: 102;
+    z-index: 10;
     right: 35px;
     width: 4rem;
     height: 4rem;
@@ -329,6 +330,7 @@
     font-weight: bold;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    border-radius: 5px;
 }
 
 .close:hover,

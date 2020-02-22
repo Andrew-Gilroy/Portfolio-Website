@@ -1,23 +1,74 @@
 
 import React, { useEffect } from 'react';
 import Prism from 'prismjs';
-
-//IMAGE IMPORTS
-import cupboard_combiner_hero_image from "../../../images/cupboard_combiner/cupboard_combiner_hero_image.png";
-import cupboard_combiner_notes2 from "../../../images/cupboard_combiner/cupboard_combiner_notes_2.png";
-import cupboard_combiner_appBlueCropped from "../../../images/cupboard_combiner/app_blue_cropped.png";
-import cupboard_combiner_appBlack from "../../../images/cupboard_combiner/app_black.png";
-import cupboard_combiner_appGreen from "../../../images/cupboard_combiner/app_green.png";
-import cupboard_combiner_appRedMobile from "../../../images/cupboard_combiner/app_red_mobile.png";
-import cupboard_combiner_appLightMobile from "../../../images/cupboard_combiner/app_light_mobile.png";
-
+import Img from "gatsby-image";
+import { useStaticQuery, graphql } from "gatsby";
 
 //CSS
 import project_detailsCSS from "../../project_detail/project_detail.css";
 
+//graphQL snippet to reduce code repetition within query below
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
 const Project_Cupboard_Combiner = () => { 
 
-    
+    const data = useStaticQuery(
+        graphql`
+        query {
+            appBlack: file(relativePath: { eq: "cupboard_combiner/app_black.png" }) {
+                ...fluidImage
+            }
+            appBlueCropped: file(relativePath: { eq: "cupboard_combiner/app_blue_cropped.png" }) {
+                ...fluidImage
+            }
+            appBlue: file(relativePath: { eq: "cupboard_combiner/app_blue.png" }) {
+                ...fluidImage
+            }
+            appBlue2: file(relativePath: { eq: "cupboard_combiner/app_blue2.png" }) {
+                ...fluidImage
+            }
+            appGreen: file(relativePath: { eq: "cupboard_combiner/app_green.png" }) {
+                ...fluidImage
+            }
+            appLightMobile: file(relativePath: { eq: "cupboard_combiner/app_light_mobile.png" }) {
+                ...fluidImage
+            }
+            appLight: file(relativePath: { eq: "cupboard_combiner/app_light.png" }) {
+                ...fluidImage
+            }
+            appRedMobile: file(relativePath: { eq: "cupboard_combiner/app_red_mobile.png" }) {
+                ...fluidImage
+            }
+            appRed: file(relativePath: { eq: "cupboard_combiner/app_red.png" }) {
+                ...fluidImage
+            }
+            appYellowMobile: file(relativePath: { eq: "cupboard_combiner/app_yellow_mobile_expanded.png" }) {
+                ...fluidImage
+            }
+            appYellow: file(relativePath: { eq: "cupboard_combiner/app_yellow.png" }) {
+                ...fluidImage
+            }
+            heroImage: file(relativePath: { eq: "cupboard_combiner/cupboard_combiner_hero_image.png" }) {
+                ...fluidImage
+            }
+            mockup: file(relativePath: { eq: "cupboard_combiner/cupboard_combiner_mockup.png" }) {
+                ...fluidImage
+            }
+            notes: file(relativePath: { eq: "cupboard_combiner/cupboard_combiner_notes_2.png" }) {
+                ...fluidImage
+            }
+          }
+      `
+    );
+//enables prism JS for code example styling
 useEffect(() => {
         Prism.highlightAll();
       }, []);
@@ -28,7 +79,7 @@ return (
             <h2 className="divider_heading">Cupboard Combiner</h2>
         </div>
         <div className="project_hero_image_wrapper">
-            <img src={cupboard_combiner_hero_image} alt="Cupboard Combiner Hero" className="project_hero_image"></img>
+            <Img fluid={data.heroImage.childImageSharp.fluid} alt="project hero banner" className="project_hero_image"/>
         </div>
         
         <div className="project_details_flex_row --margin-top">
@@ -41,8 +92,8 @@ return (
                 <a href="https://andrew-gilroy.github.io/CupboardCombiner/"  target="_blank">
                     <button className="project_details_submit_button">LIVE DEMO</button>
                 </a>
-                <img src={cupboard_combiner_appBlueCropped} alt="Cupboard Combiner" className="project_details_image--fullWidth box_shadow"></img>
-            </div>
+                <Img fluid={data.appBlueCropped.childImageSharp.fluid} alt="Cupboard Combiner" className="project_details_image--fullWidth box_shadow"/>
+           </div>
             {/* <!--end of text wrapper--> */}
         </div>
         {/*  <!--end of row--> */}
@@ -51,8 +102,8 @@ return (
                 <h2 className="project_details_subheading">Initial Concept Development</h2>
                 <hr></hr>
                 <p className="project_details_body_text">Inspired by my girlfriend Ana's approach to cooking I decided to create a web app that can take a list of items supplied by the user and recombine them into random suggested meals.                 
-                </p>            
-                <img src={cupboard_combiner_notes2} alt="Cupboard combiner app notes" className="project_details_image--fullWidth box_shadow"></img>
+                </p>     
+                <Img fluid={data.notes.childImageSharp.fluid} alt="Cupboard Combiner notes" className="project_details_image--fullWidth box_shadow"/>       
             </div>
             {/* <!--end of text wrapper--> */}
         </div>
@@ -113,7 +164,8 @@ return (
       const [items, updateItems] = useState([
           {name: 'Bacon', url: 'https://farm66.staticflickr.com/65535/49285056768_de01247872.jpg'}, 
           {name: 'Carrots', url: 'https://farm2.staticflickr.com/1496/24428604506_dfa351a5a7.jpg'}, 
-          {name: 'Eggs', url: 'https://farm4.staticflickr.com/3348/3514192452_2981b6e008.jpg'},{name: 'Noodles', url: 'https://farm8.staticflickr.com/7858/31620262177_8678387c2c.jpg'}, 
+          {name: 'Eggs', url: 'https://farm4.staticflickr.com/3348/3514192452_2981b6e008.jpg'},
+          {name: 'Noodles', url: 'https://farm8.staticflickr.com/7858/31620262177_8678387c2c.jpg'}, 
           {name: 'Rice', url: ' https://farm5.staticflickr.com/4063/4513240600_a9df7d1739.jpg'}
         ]);
     
@@ -161,8 +213,8 @@ return (
                     <p className="project_details_body_text">                    
                     Several additional features were added to the app that were outside of the initial scope. I incorporated the Flickr API to retrieve valid image url's based on a users input. Next I decided to add different themes for the app which can be seen below. This was achieved by writing javascript code that can dynamically inject styling to the document using the docRootStyle method.
                     </p>
-                    <img src={cupboard_combiner_appBlack} alt="App Theme Dark" className="project_details_image--halfWidth box_shadow"></img>
-                    <img src={cupboard_combiner_appGreen} alt="App Theme Green" className="project_details_image--halfWidth box_shadow"></img>
+                    <Img fluid={data.appBlack.childImageSharp.fluid} alt="Dark theme" className="project_details_image--fullWidth box_shadow"/>
+                    <Img fluid={data.appGreen.childImageSharp.fluid} alt="Green theme" className="project_details_image--fullWidth box_shadow"/>
                 </div>
                 {/* <!--end of text wrapper--> */}
             </div>
@@ -174,14 +226,14 @@ return (
                     <p className="project_details_body_text">
                     Mobile responsiveness was achieved by using media queries which were used to collapse the layout into a column layout with the theme picker now incorporated into the body of the app.
                     </p>
-                    <img src={cupboard_combiner_appRedMobile} alt="App Theme Red Mobile" className="project_details_image--halfWidth box_shadow"></img>
-                    <img src={cupboard_combiner_appLightMobile} alt="App Theme Light Mobile" className="project_details_image--halfWidth box_shadow"></img>
+                    <Img fluid={data.appRedMobile.childImageSharp.fluid} alt="Red mobile theme" className="project_details_image--fullWidth box_shadow"/>
+                    <Img fluid={data.appLightMobile.childImageSharp.fluid} alt="Light mobile theme" className="project_details_image--fullWidth box_shadow"/>
                 </div>
                 {/* <!--end of text wrapper--> */}
             </div>
-            
-            </>
+        </>
     )
 }
 
+  
 export default Project_Cupboard_Combiner
