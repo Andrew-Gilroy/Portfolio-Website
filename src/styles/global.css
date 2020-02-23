@@ -28,7 +28,7 @@ html {
     font-size: 62.5%;
     background-color: #1d1d1d;
     //scroll-behavior: smooth;
-    /*smooth scrolling to links check browser compat or mobile*/
+    /*smooth scrolling to links check browser compatibility on mobile*/
     -ms-overflow-style: none;
     /* hide scrollbars in MS browser */
     
